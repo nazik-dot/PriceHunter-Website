@@ -12,22 +12,21 @@ body, html {
 
 header {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: smaller;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     align-items: center;
     background: radial-gradient(circle, #fdfde1, #BBBD92);
     justify-content: flex-start;
     gap: 90px;
-    height: 100px;
+    height: auto;
     padding: 10px 25px;
 }
 
 header img {
     margin-right: 30px;
     margin-bottom: 20px;
-    height: 120px;
+    height: 500px;
 }
 
 header button {
@@ -37,85 +36,13 @@ header button {
     background-color: rgb(255, 250, 212);
     border-color: rgb(27, 30, 0);
     font-family: 'Courier New', Courier, monospace;
-    margin-left: 750px;
+    margin-bottom: 100px;
 }
 
 header button:hover {
     transform: scale(1.01);
     box-shadow: 0 0 10px #fff159;
     border: none;
-}
-
-main {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    width: 100%;
-    padding: 20px;
-    background-color: #FFFEE0;  
-}
-
-.product {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    border-radius: 20px;
-    background-color: rgb(215, 213, 193);
-    margin: 0;
-}
-
-.product p {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: smaller;
-    margin: 20px;
-}
-
-.country {
-    border-radius: 10px;
-    margin: 20px;
-    height: auto;
-    width: 90px;
-}
-
-.product-image {
-    border-radius: 10px;
-    width: 220px;
-    height: auto;
-}
-
-.product-image:hover {
-    transform: scale(1.03);
-}
-
-.website:hover {
-    transform: scale(1.03);
-}
-
-.website {
-    border-radius: 10px;
-    width: 50px;
-    height: auto;
-    margin: 10px;
-}
-
-.country:hover {
-    transform: scale(1.03);
-}
-
-.product a {
-    margin: 10px;
-}
-
-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    background: radial-gradient(circle, #fdfde1, #BBBD92);
-    font-family: 'Courier New', Courier, monospace;
-    font-size: medium;
 }
 
 @media (max-width: 768px) {
@@ -138,41 +65,5 @@ footer {
         width: 100%;
         max-width: 220px;
         height: 45px;
-    }
-
-    main {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        padding: 10px;
-    }
-
-    .product {
-        padding: 5px;
-    }
-
-    .product-image {
-        width: 100%;
-        max-width: 160px;
-        height: auto;
-    }
-
-    .country {
-        width: 60px;
-        margin: 5px;
-    }
-
-    .website {
-        width: 40px;
-    }
-
-    .product p {
-        font-size: 11px;
-        text-align: center;
-        margin: 10px 5px;
-    }
-
-    footer {
-        text-align: center;
-        padding: 15px;
     }
 }
