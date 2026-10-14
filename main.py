@@ -219,7 +219,7 @@ def send_order():
         phone=phone,
         delivery=delivery,
         delivery_adress=delivery_adress,
-        product_id=product_id,
+        product_id=product['id'],
         city=city,
         warehouse=warehouse,
         price=price,
