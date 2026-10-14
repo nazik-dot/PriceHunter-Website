@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from functools import wraps
 import os
 
-app = Flask(__name__)
+app = Flask(__name__, instance_path="/tmp/instance")
 load_dotenv()
 
 def admin_required(view):
