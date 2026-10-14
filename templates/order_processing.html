@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PriceHunter</title>
+
+    <link rel="stylesheet" href="static/order_processing.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="/" class="logo">PriceHunter</a>
+        <span class="header-label">Оформлення замовлення</span>
+    </header>
+
+    <main class="page">
+        <section class="order-card">
+
+            <div class="success-icon">✓</div>
+
+            <h1>Дякуємо за замовлення!</h1>
+            <p class="subtitle">
+                Ваше замовлення прийнято та збережено.
+            </p>
+
+            <div class="order-number">
+                <span>Номер замовлення</span>
+                <strong>#{{ order.id }}</strong>
+            </div>
+
+            <div class="section">
+                <h2>Ваш товар</h2>
+
+                <div class="product">
+                    <img src="{{ product.image }}"
+                         alt="{{ product.name }}"
+                         class="product-image">
+
+                    <div class="product-info">
+                        <h3>{{ product.name }}</h3>
+
+                        <p>
+                            Кількість:
+                            <strong>{{ order.quantity }}</strong>
+                        </p>
+
+                        <p class="price">
+                            {{ order.price }} грн / шт.
+                        </p>
+
+                        <p class="total">
+                            Разом:
+                            <strong>
+                                {{ order.price * order.quantity }} грн
+                            </strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Дані доставки</h2>
+
+                <div class="details">
+                    <p>
+                        <span>Отримувач</span>
+                        <strong>{{ order.name }}</strong>
+                    </p>
+
+                    <p>
+                        <span>Телефон</span>
+                        <strong>{{ order.phone }}</strong>
+                    </p>
+
+                    <p>
+                        <span>Служба доставки</span>
+                        <strong>{{ order.delivery }}</strong>
+                    </p>
+
+                    <p>
+                        <span>Місто</span>
+                        <strong>{{ order.city }}</strong>
+                    </p>
+
+                    <p>
+                        <span>Відділення / адреса</span>
+                        <strong>{{ order.delivery_adress }}</strong>
+                    </p>
+
+                    <p>
+                        <span>Спосіб оплати</span>
+                        <strong>{{ order.payment_mode }}</strong>
+                    </p>
+                </div>
+            </div>
+
+            <p class="notice">
+                Збережіть номер замовлення. Якщо потрібно уточнити деталі,
+                скористайтеся контактами магазину.
+            </p>
+
+            <a href="{{ url_for('catalogue') }}" class="back-button">
+                Повернутися до каталогу
+            </a>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        © 2026 PriceHunter
+    </footer>
+
+</body>
+</html>

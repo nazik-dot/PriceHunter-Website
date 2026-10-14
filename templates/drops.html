@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PriceHunter</title>
+    <link rel="stylesheet" href="static/drops.css">
+    <link rel="icon" type="image/png" href="/static/PriceHunterLogo.png">
+</head>
+<body>
+    <header>
+        <div class="back_button">
+            <button onclick="window.location.href='/'">Back</button>
+        </div>
+    </header>
+    <main>
+        {% for product_key, product in products.items() %}
+        <div class="product">
+            <p>{{ product.id }}</p>
+            <img src="{{ product.image }}" alt="{{ product.name }}" class="product-image">
+            <p>{{ product.name }}</p>
+            <p>Price: ${{ product.price }}</p>
+            <button type="button"
+                    class="buy_button"
+                    data-product-id="{{ product_key }}"
+                    data-product-name="{{ product.name }}"
+                    data-product-price="{{ product.price }}"
+                    onclick="openOrderForm(this)">
+                Buy Now
+            </button>
+        </div>
+        {% endfor %}
+        <div class="order-overlay" id="orderOverlay" onclick="closeOrderForm(event)">
+
+            <div class="order-modal" role="dialog"
+                 aria-modal="true" aria-labelledby="orderTitle">
+
+                <button type="button" class="close-modal"
+                        onclick="closeOrderForm()"
+                        aria-label="Закрити">
+                    &times;
+                </button>
+
+                <div class="modal-heading">
+                    <img src="/static/PriceHunterWithoutBG.png" alt="PriceHunter" class="modal-logo">
+                    <h2 id="orderTitle">Оформлення замовлення</h2>
+                    <p>Заповніть дані для доставки вашого товару.</p>
+                </div>
+
+                <div class="selected-product">
+                    <div>
+                        <span class="field-caption">Ваш товар</span>
+                        <h3 id="selectedProductName">Товар</h3>
+                    </div>
+
+                    <strong id="selectedProductPrice">0 грн</strong>
+                </div>
+
+                <form action="{{ url_for('send_order') }}"
+                      method="POST"
+                      id="orderForm">
+
+                    <input type="hidden" name="product_id" id="productId">
+                    <input type="hidden" name="price" id="productPrice">
+
+                    <div class="form-grid">
+
+                        <div class="form-field">
+                            <label for="customerName">Ваш ПІБ</label>
+                            <input type="text" id="customerName"
+                                   name="name" maxlength="50"
+                                   autocomplete="name" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="customerPhone">Номер телефону</label>
+                            <input type="tel" id="customerPhone"
+                                   name="phone" maxlength="70"
+                                   autocomplete="tel" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="delivery">Служба доставки</label>
+                            <select id="delivery" name="delivery" required>
+                                <option value="">Оберіть службу</option>
+                                <option value="Нова пошта">Нова пошта</option>
+                                <option value="Укрпошта">Укрпошта</option>
+                            </select>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="city">Місто</label>
+                            <input type="text" id="city" name="city"
+                                   maxlength="50" autocomplete="address-level2"
+                                   required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="warehouse">Відділення / поштомат</label>
+                            <input type="text" id="warehouse" name="warehouse"
+                                   maxlength="50" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="deliveryAddress">Адреса доставки</label>
+                            <input type="text" id="deliveryAddress"
+                                   name="delivery_adress" maxlength="100"
+                                   autocomplete="street-address" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="quantity">Кількість</label>
+                            <input type="number" id="quantity" name="quantity"
+                                   value="1" min="1" max="99" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="paymentMode">Спосіб оплати</label>
+                            <input type="text"
+                                   id="paymentMode"
+                                   name="payment_mode"
+                                   value="Накладений платіж"
+                                   readonly
+                                   required>
+                        </div>
+
+                    </div>
+
+                    <div class="order-total">
+                        <span>Загальна вартість товарів</span>
+                        <strong id="orderTotal">0 грн</strong>
+                    </div>
+
+                    <button type="submit" class="submit-order">
+                        Підтвердити замовлення
+                    </button>
+
+                    <p class="form-footnote">
+                        Перевірте правильність введених даних перед відправленням.
+                    </p>
+
+                </form>
+            </div>
+        </div>
+    </main>
+
+<script>
+    const orderOverlay = document.getElementById('orderOverlay');
+    const orderForm = document.getElementById('orderForm');
+    const quantityInput = document.getElementById('quantity');
+
+    let currentPrice = 0;
+    let lastBuyButton = null;
+
+    function openOrderForm(button) {
+                lastBuyButton = button;
+
+                const productId = button.dataset.productId;
+                const productName = button.dataset.productName;
+                currentPrice = Number(button.dataset.productPrice);
+
+                document.getElementById('productId').value = productId;
+                document.getElementById('productPrice').value = currentPrice;
+                document.getElementById('selectedProductName').textContent = productName;
+                document.getElementById('selectedProductPrice').textContent =
+                    currentPrice.toLocaleString('uk-UA') + ' грн';
+
+                quantityInput.value = 1;
+                updateOrderTotal();
+
+                orderOverlay.classList.add('is-open');
+                document.body.classList.add('modal-open');
+
+                document.getElementById('customerName').focus();
+    }
+
+    function closeOrderForm(event) {
+                if (event && event.target !== orderOverlay) {
+                    return;
+                }
+
+                orderOverlay.classList.remove('is-open');
+                document.body.classList.remove('modal-open');
+
+                if (lastBuyButton) {
+                    lastBuyButton.focus();
+                }
+    }
+
+    function updateOrderTotal() {
+                const quantity = Math.max(1, Number(quantityInput.value) || 1);
+
+                document.getElementById('orderTotal').textContent =
+                    (currentPrice * quantity).toLocaleString('uk-UA') + ' грн';
+    }
+
+    quantityInput.addEventListener('input', updateOrderTotal);
+
+    document.addEventListener('keydown', function(event) {
+                if (event.key === 'Escape' && orderOverlay.classList.contains('is-open')) {
+                    closeOrderForm();
+                }
+    });
+</script>
+</body>
+</html>

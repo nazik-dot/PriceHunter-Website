@@ -1,0 +1,8 @@
+.env
+/instance/order_service.db
+.vs/
+venv/
+__pycache__/
+.env
+*.pyc
+instance/
