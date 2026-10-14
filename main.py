@@ -38,6 +38,9 @@ class Order(db.Model):
     quantity = db.Column(db.Integer, nullable=False)
     payment_mode = db.Column(db.String(30), nullable=False)
 
+with app.app_context():
+    db.create_all()
+
 products = {
     "1": {
         "id": "02-5156452",
