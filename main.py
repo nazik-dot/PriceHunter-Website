@@ -229,6 +229,7 @@ def send_order():
 
     db.session.add(new_order)
     db.session.commit()
+    db.session.refresh(new_order)
 
     return render_template("order_processing.html", order=new_order, product=product)
 
