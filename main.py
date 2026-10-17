@@ -5,7 +5,9 @@ from functools import wraps
 import os
 
 app = Flask(__name__)
-load_dotenv()
+load_dotenv(
+    os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env")
+)
 
 def admin_required(view):
     @wraps(view)
