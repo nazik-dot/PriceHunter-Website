@@ -45,7 +45,7 @@ products = {
     "1": {
         "id": "02-5156452",
         "name": "Чохол на диван 4-місний Love You Corn Fleece 81223 коричневий",
-        "price": 1564,
+        "price": 1689,
         "image": "/files/chohol_na_duvan.webp"
     },
     "2": {
@@ -57,13 +57,13 @@ products = {
     "3": {
         "id": "451-100396",
         "name": "Розгалужувач прикурювача на 3 гнізда з USB",
-        "price": 165,
+        "price": 227,
         "image": "/files/roshaluzuvach.webp"
     },
     "4": {
         "id": "321-111119190",
         "name": "Силіконова сушарка DT-1503 50×35 см сіра • Сушарка для посуду DT-1503 з килимком, тримачами для тарілок, чашок і приборів",
-        "price": 476,
+        "price": 531,
         "image": "/files/silikonova_susarka.webp"
     },
     "5": {
@@ -75,7 +75,7 @@ products = {
     "6": {
         "id": "02-5264672",
         "name": "Випрямляч для волосся Ardesto Pink Touch HC-R365PT 68 Вт сірий",
-        "price": 1077,
+        "price": 1161,
         "image": "/files/vip_dla_volosya.webp"
     },
     "7": {
@@ -99,7 +99,7 @@ products = {
     "10": {
        "id": "02-1440146635",
        "name": "Кросівки жіночі Fashion Wizard 3127 37 розмір 23,5 см Білий",
-       "price": 742,
+       "price": 798,
        "image": "/files/fashion_wizard312737.webp"
     },
     "11": {
@@ -117,13 +117,13 @@ products = {
     "13": {
         "id": "123-109953",
         "name": "Магнітола 901W 10.26' PND / Монітор 10.26' / Автомобільна стереосистема Bluetooth, Mirror Link, AUX",
-        "price": 2927,
+        "price": 2946,
         "image": "/files/magnitola_901W.webp"
     },
     "14": {
         "id": "123-110211",
         "name": "IPAD 10.1 Планшет на 5 камер / Планшет з великим екраном та сучасним дизайном",
-        "price": 5145,
+        "price": 5179,
         "image": "/files/ipad_10.1.webp"
     },
     "15": {
@@ -139,10 +139,10 @@ products = {
         "image": "/files/kilzeva_svitlodiodna_lampa_dla_zyomki.webp"
     },
     "17": {
-        "id": "991-120049278",
-        "name": "Аптечка першої допомоги спортивна First Aid Kit NE-LG-MED1",
-        "price": 621,
-        "image": "/files/aptechka_pershoi_dopomogi_sportivna.webp"
+        "id": "02-5309509",
+        "name": "Постільна білизна євро з мусліну Koloco Print 1 23119 200х230 см",
+        "price": 1058,
+        "image": "/files/postilna_biluzna_evro_muslin_koloco_print1.webp"
     },
     "18": {
         "id": "321-111119227",
@@ -157,10 +157,28 @@ products = {
         "image": "/files/termosumka_holodilnik_26l_begeva.webp"
     },
     "20": {
-        "id": "02-5232774",
-        "name": "Ковдра двоспальна ТЕП ALASKA Зірки 1-00152_23926 180х205 см",
-        "price": 1292,
-        "image": "/files/kowdra_dvospalna_alaska_tepla.webp"
+        "id": "451-129210",
+        "name": "Складная, походная канистра для воды 20 л Емкость для воды с краном",
+        "price": 319,
+        "image": "/files/skladnaya_pohodnaya_kanistra_dla_vody.webp"
+    },
+    "21": {
+        "id": "02-5272947",
+        "name": "Клавіатура провідна комп'ютерна Logitech G PRO Mechanical Gaming USB L920-009392 чорна",
+        "price": 7925,
+        "image": "/files/klaviatura_providna_computerna_logitech_g_pro.webp"
+    },
+    "22": {
+        "id": "02-5056112",
+        "name": "Легінси жіночі з пуш-ап 18871 M сірі",
+        "price": 575,
+        "image": "/files/leginsu_zinochi_pushup.webp"
+    },
+    "23": {
+        "id": "02-5280405",
+        "name": "Рушник банний махровий Koloco 22215 70х140 см капучино",
+        "price": 423,
+        "image": "/files/rushnuk_banniy_machroviy_koloco.webp"
     }
 }
 
