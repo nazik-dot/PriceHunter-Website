@@ -4,10 +4,8 @@ from flask_sqlalchemy import SQLAlchemy
 from functools import wraps
 import os
 
-app = Flask(__name__)
-load_dotenv(
-    os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env")
-)
+app = Flask(__name__, instance_path="/tmp/instance")
+load_dotenv()
 
 def admin_required(view):
     @wraps(view)
@@ -17,12 +15,7 @@ def admin_required(view):
         return view(*args, **kwargs)
     return wrapped_view
 
-db_path = os.path.join(
-    os.path.dirname(os.path.abspath(__file__)),
-    "order_service.db"
-)
-
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + db_path
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///order_service.db'
 app.config['SQLALCHEMY_TRACK_NOTIFICATIONS'] = False
 
 db = SQLAlchemy(app)
