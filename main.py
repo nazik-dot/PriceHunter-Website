@@ -179,6 +179,12 @@ products = {
         "name": "Рушник банний махровий Koloco 22215 70х140 см капучино",
         "price": 423,
         "image": "/files/rushnuk_banniy_machroviy_koloco.webp"
+    },
+    "24": {
+        "id": "999-26877",
+        "name": "Стільниковий акумулятор, Переносний зарядний банк, Портативний акумулятор для телефону WQ-25",
+        "price": 399,
+        "image": "/files/stilnikoviy_akamulator_perenosni_zaradniy_bank.webp"
     }
 }
 
