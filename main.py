@@ -63,13 +63,13 @@ products = {
     "4": {
         "id": "321-111119190",
         "name": "Силіконова сушарка DT-1503 50×35 см сіра • Сушарка для посуду DT-1503 з килимком, тримачами для тарілок, чашок і приборів",
-        "price": 531,
+        "price": 541,
         "image": "/files/silikonova_susarka.webp"
     },
     "5": {
         "id": "321-111119183",
         "name": "Шарф Intelligent Heating Scarf з підігрівом чорний",
-        "price": 505,
+        "price": 515,
         "image": "/files/sharf_z_pidigrivom.webp"
     },
     "6": {
@@ -93,7 +93,7 @@ products = {
     "9": {
         "id": "321-111119232",
         "name": "Електропила ланцюгова MLD із шиною 16″ у валізі",
-        "price": 3004,
+        "price": 3071,
         "image": "/files/elektropila_lanzugova.webp"
     },
     "10": {
@@ -115,15 +115,15 @@ products = {
         "image": "/files/rekvizit_dla_animatora_parashut.webp"
     },
     "13": {
-        "id": "123-109953",
-        "name": "Магнітола 901W 10.26' PND / Монітор 10.26' / Автомобільна стереосистема Bluetooth, Mirror Link, AUX",
-        "price": 2946,
-        "image": "/files/magnitola_901W.webp"
+        "id": "02-5118786",
+        "name": "Набір салатників SNT 30098-02 7 предметів білий",
+        "price": 727,
+        "image": "/files/nabir_salatnikiv_snt_biluy.webp"
     },
     "14": {
         "id": "123-110211",
         "name": "IPAD 10.1 Планшет на 5 камер / Планшет з великим екраном та сучасним дизайном",
-        "price": 5179,
+        "price": 5236,
         "image": "/files/ipad_10.1.webp"
     },
     "15": {
@@ -141,19 +141,19 @@ products = {
     "17": {
         "id": "02-5309509",
         "name": "Постільна білизна євро з мусліну Koloco Print 1 23119 200х230 см",
-        "price": 1058,
+        "price": 1078,
         "image": "/files/postilna_biluzna_evro_muslin_koloco_print1.webp"
     },
     "18": {
         "id": "321-111119227",
         "name": "Термосумка холодильник 26 л синя 39×23×28 см",
-        "price": 412,
+        "price": 417,
         "image": "/files/termosumka_holodilnik_26l.webp"
     },
     "19": {
         "id": "321-111119228",
         "name": "Термосумка-холодильник 26 л 39×23×28 см бежева",
-        "price": 412,
+        "price": 417,
         "image": "/files/termosumka_holodilnik_26l_begeva.webp"
     },
     "20": {
@@ -171,20 +171,32 @@ products = {
     "22": {
         "id": "02-5056112",
         "name": "Легінси жіночі з пуш-ап 18871 M сірі",
-        "price": 575,
+        "price": 582,
         "image": "/files/leginsu_zinochi_pushup.webp"
     },
     "23": {
         "id": "02-5280405",
         "name": "Рушник банний махровий Koloco 22215 70х140 см капучино",
-        "price": 423,
+        "price": 429,
         "image": "/files/rushnuk_banniy_machroviy_koloco.webp"
     },
     "24": {
         "id": "999-26877",
         "name": "Стільниковий акумулятор, Переносний зарядний банк, Портативний акумулятор для телефону WQ-25",
-        "price": 399,
+        "price": 470,
         "image": "/files/stilnikoviy_akamulator_perenosni_zaradniy_bank.webp"
+    },
+    "25": {
+        "id": "02-5208483",
+        "name": "Стайлер для волосся Inspire WT-631-6IN1 1000 Вт чорний",
+        "price": 4042,
+        "image": "/files/styler_dla_volosya_inspire.webp"
+    },
+    "26": {
+        "id": "321-111119386",
+        "name": "Годівниця з поїлкою Pet Automatic 2 в 1 синя • Автоматична гравітаційна годівниця Pet Automatic для котів і собак із резервуарами для сухого корму та води без електрики",
+        "price": 515,
+        "image": "/files/godivnuza_z_poilkoyu_petautomatic.webp"
     }
 }
 
