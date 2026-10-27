@@ -197,6 +197,18 @@ products = {
         "name": "Годівниця з поїлкою Pet Automatic 2 в 1 синя • Автоматична гравітаційна годівниця Pet Automatic для котів і собак із резервуарами для сухого корму та води без електрики",
         "price": 515,
         "image": "/files/godivnuza_z_poilkoyu_petautomatic.webp"
+    },
+    "27": {
+        "id": "02-5210737",
+        "name": "Тример VGR V-983 5 Вт золотистий",
+        "price": 764,
+        "image": "/files/trimer_vgr_zolotistiy.webp"
+    },
+    "28": {
+        "id": "321-111119381",
+        "name": "Компактна шафка XL-1613 для ванної з основою 15×15 см • вертикальна система зберігання білого кольору з полицями та закритими секціями для косметики й дрібниць",
+        "price": 589,
+        "image": "/files/kompaktna_shafa_dla_vannoi_z_osnovoyu.webp"
     }
 }
 
