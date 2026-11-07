@@ -51,7 +51,7 @@ products = {
     "2": {
         "id": "991-120031284",
         "name": "Холст на підрамнику 40х60 см Art Craft 16020",
-        "price": 315,
+        "price": 382,
         "image": "/files/holst_na_pidramniku.jpg"
     },
     "3": {
@@ -63,25 +63,25 @@ products = {
     "4": {
         "id": "321-111119190",
         "name": "Силіконова сушарка DT-1503 50×35 см сіра • Сушарка для посуду DT-1503 з килимком, тримачами для тарілок, чашок і приборів",
-        "price": 541,
+        "price": 550,
         "image": "/files/silikonova_susarka.webp"
     },
     "5": {
         "id": "321-111119183",
         "name": "Шарф Intelligent Heating Scarf з підігрівом чорний",
-        "price": 515,
+        "price": 526,
         "image": "/files/sharf_z_pidigrivom.webp"
     },
     "6": {
         "id": "02-5264672",
         "name": "Випрямляч для волосся Ardesto Pink Touch HC-R365PT 68 Вт сірий",
-        "price": 1161,
+        "price": 1040,
         "image": "/files/vip_dla_volosya.webp"
     },
     "7": {
         "id": "991-120069877",
         "name": "М'яка іграшка 'Товстий кіт' K15215(White) 60 см",
-        "price": 794,
+        "price": 766,
         "image": "/files/tovstiy_kit.webp"
     },
     "8": {
@@ -93,7 +93,7 @@ products = {
     "9": {
         "id": "321-111119232",
         "name": "Електропила ланцюгова MLD із шиною 16″ у валізі",
-        "price": 3071,
+        "price": 3137,
         "image": "/files/elektropila_lanzugova.webp"
     },
     "10": {
@@ -111,7 +111,7 @@ products = {
     "12": {
         "id": "991-120069565",
         "name": "Реквізит для аніматора 'Парашут' KJ07-2 діаметр 3 м",
-        "price": 1514,
+        "price": 1460,
         "image": "/files/rekvizit_dla_animatora_parashut.webp"
     },
     "13": {
@@ -123,7 +123,7 @@ products = {
     "14": {
         "id": "123-110211",
         "name": "IPAD 10.1 Планшет на 5 камер / Планшет з великим екраном та сучасним дизайном",
-        "price": 5236,
+        "price": 5406,
         "image": "/files/ipad_10.1.webp"
     },
     "15": {
@@ -141,19 +141,19 @@ products = {
     "17": {
         "id": "02-5309509",
         "name": "Постільна білизна євро з мусліну Koloco Print 1 23119 200х230 см",
-        "price": 1078,
+        "price": 1110,
         "image": "/files/postilna_biluzna_evro_muslin_koloco_print1.webp"
     },
     "18": {
         "id": "321-111119227",
         "name": "Термосумка холодильник 26 л синя 39×23×28 см",
-        "price": 417,
+        "price": 424,
         "image": "/files/termosumka_holodilnik_26l.webp"
     },
     "19": {
         "id": "321-111119228",
         "name": "Термосумка-холодильник 26 л 39×23×28 см бежева",
-        "price": 417,
+        "price": 424,
         "image": "/files/termosumka_holodilnik_26l_begeva.webp"
     },
     "20": {
@@ -171,43 +171,43 @@ products = {
     "22": {
         "id": "02-5056112",
         "name": "Легінси жіночі з пуш-ап 18871 M сірі",
-        "price": 582,
+        "price": 600,
         "image": "/files/leginsu_zinochi_pushup.webp"
     },
     "23": {
         "id": "02-5280405",
         "name": "Рушник банний махровий Koloco 22215 70х140 см капучино",
-        "price": 429,
+        "price": 435,
         "image": "/files/rushnuk_banniy_machroviy_koloco.webp"
     },
     "24": {
         "id": "999-26877",
         "name": "Стільниковий акумулятор, Переносний зарядний банк, Портативний акумулятор для телефону WQ-25",
-        "price": 470,
+        "price": 476,
         "image": "/files/stilnikoviy_akamulator_perenosni_zaradniy_bank.webp"
     },
     "25": {
         "id": "02-5208483",
         "name": "Стайлер для волосся Inspire WT-631-6IN1 1000 Вт чорний",
-        "price": 4042,
+        "price": 4023,
         "image": "/files/styler_dla_volosya_inspire.webp"
     },
     "26": {
         "id": "321-111119386",
         "name": "Годівниця з поїлкою Pet Automatic 2 в 1 синя • Автоматична гравітаційна годівниця Pet Automatic для котів і собак із резервуарами для сухого корму та води без електрики",
-        "price": 515,
+        "price": 526,
         "image": "/files/godivnuza_z_poilkoyu_petautomatic.webp"
     },
     "27": {
         "id": "02-5210737",
         "name": "Тример VGR V-983 5 Вт золотистий",
-        "price": 764,
+        "price": 786,
         "image": "/files/trimer_vgr_zolotistiy.webp"
     },
     "28": {
         "id": "321-111119381",
         "name": "Компактна шафка XL-1613 для ванної з основою 15×15 см • вертикальна система зберігання білого кольору з полицями та закритими секціями для косметики й дрібниць",
-        "price": 589,
+        "price": 601,
         "image": "/files/kompaktna_shafa_dla_vannoi_z_osnovoyu.webp"
     }
 }
