@@ -209,6 +209,30 @@ products = {
         "name": "Компактна шафка XL-1613 для ванної з основою 15×15 см • вертикальна система зберігання білого кольору з полицями та закритими секціями для косметики й дрібниць",
         "price": 601,
         "image": "/files/kompaktna_shafa_dla_vannoi_z_osnovoyu.webp"
+    },
+    "29": {
+        "id": "02-5273818",
+        "name": "Форма для запікання прямокутна Maestro MR-1107-35 7х29.5х37 см чорна",
+        "price": 938,
+        "image": "/files/forma_dla_zapikanya_pramokutna_maestro_mr.webp"
+    },
+    "30": {
+        "id": "02-589229575",
+        "name": "Жіноча парфумована вода MISS DREAM,100 мл La Rive HIM-066071",
+        "price": 604,
+        "image": "/files/zhinocha_parfumovana_woda_missdream_100ml.webp"
+    },
+    "31": {
+        "id": "02-4721785",
+        "name": "Кондиціонер для білизни Lavandera Морський Бриз 8435495828730 1.76 л",
+        "price": 406,
+        "image": "/files/kondizioner_dla_biluznu_lavandera_morskiy_1_76l.webp"
+    },
+    "32": {
+        "id": "602-1563329",
+        "name": "Светри WN20-773 Universal бордовий",
+        "price": 1168,
+        "image": "/files/svetri_wn20-773_universal_bordoviy.webp"
     }
 }
 
