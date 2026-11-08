@@ -32,19 +32,31 @@ header {
 }
 
 header button {
-    height: 50px;
-    width: 100px;
-    border-radius: 20px;
-    border: none;
-    background-color: rgb(205, 92, 92, 0.8);
-    font-family: 'Courier New', Courier, monospace;
-    margin: 10px;
+    padding: 12px 25px;
+    min-width: 105px;
+    color: var(--cream);
+    background: #454633;
+    border: 1px solid #353629;
+    border-radius: 11px;
+    font-family: "Courier New", monospace;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    box-shadow: 0 4px 0 #25261d;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 header button:hover {
-    transform: scale(1.01);
-    box-shadow: 0 0 10px #000000;
-    border: none;
+    color: #292a20;
+    background: #e1dfb5;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 #25261d;
+}
+
+header button:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px 0 #25261d;
 }
 
 main {
