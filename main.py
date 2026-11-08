@@ -42,6 +42,12 @@ with app.app_context():
     db.create_all()
 
 products = {
+    "99": {
+        "id": "602-1565346",
+        "name": "Сукні WN19-98 темно-коричневий S, M",
+        "price": 1303,
+        "image": "/files/sukni_wn19-98_s_temno-korichneviy.webp"
+    },
     "1": {
         "id": "02-5156452",
         "name": "Чохол на диван 4-місний Love You Corn Fleece 81223 коричневий",
@@ -65,6 +71,12 @@ products = {
         "name": "Силіконова сушарка DT-1503 50×35 см сіра • Сушарка для посуду DT-1503 з килимком, тримачами для тарілок, чашок і приборів",
         "price": 550,
         "image": "/files/silikonova_susarka.webp"
+    },
+    "2701": {
+        "id": "02-589588467",
+        "name": "Чоловіча туалетна вода LA RIVE EXTREME STORY, 75 мл La Rive HIM-063223",
+        "price": 574,
+        "image": "/files/cholovicha_tualetna_woda_la_rive_extreme_story_75ml.webp"
     },
     "5": {
         "id": "321-111119183",
@@ -102,6 +114,12 @@ products = {
        "price": 798,
        "image": "/files/fashion_wizard312737.webp"
     },
+    "98": {
+        "id": "602-1565339",
+        "name": "Светри WN20-664 темно-бежевий L, XL",
+        "price": 1121,
+        "image": "/files/swetri_wn20-664_xl_temno-begeviy.webp"
+    },
     "11": {
         "id": "451-127099",
         "name": "Органайзер настільний для канцелярії, маркерів та олівців з тумбочкою",
@@ -132,6 +150,12 @@ products = {
         "price": 442,
         "image": "/files/ulyrazvukoviy_vidlakuvach_grizuniw.webp"
     },
+    "256": {
+        "id": "02-5264795",
+        "name": "Мультимейкер 8в1 Zepline ZP-808 581591 2200 Вт чорна уцінка",
+        "price": 1998,
+        "image": "/files/multimaker_8in1_zepline_chorna_uzinka.webp"
+    },
     "16": {
         "id": "451-127269",
         "name": "Кільцева світлодіодна лампа для професійної зйомки Soft Ring Light 26см",
@@ -161,6 +185,12 @@ products = {
         "name": "Складная, походная канистра для воды 20 л Емкость для воды с краном",
         "price": 319,
         "image": "/files/skladnaya_pohodnaya_kanistra_dla_vody.webp"
+    },
+    "391": {
+        "id": "602-1562442",
+        "name": "Чоловічі спортивні штани GN-570 темно-сірий S, M, L, XL, XXL",
+        "price": 1165,
+        "image": "/files/cholovichi_sportivni_shtany_gb-570_temno-siruy.webp"
     },
     "21": {
         "id": "02-5272947",
