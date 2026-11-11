@@ -361,6 +361,10 @@ def delete_order(order_id):
     db.session.delete(order)
     db.session.commit()
     return redirect(url_for("admin_pannel"))
+
+@app.route("/rules")
+def rules():
+    return render_template("rules.html")
     
 if __name__ == '__main__':
     with app.app_context():

@@ -1,3 +1,15 @@
+:root {
+    --background: #FFFEE0;
+    --cream: #fdfde1;
+    --olive: #BBBD92;
+    --olive-dark: #77794e;
+    --olive-light: #eae9ce;
+    --text: #303126;
+    --muted: #777864;
+    --border: #dedcc0;
+    --white: #fffef6;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -13,12 +25,12 @@ body, html {
 header {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
-    align-items: self-start;
+    align-items: center;
     background: radial-gradient(circle, #fdfde1, #BBBD92);
-    justify-content: flex-start;
-    gap: 90px;
+    justify-content: space-between;
+    gap: 10px;
     height: auto;
     padding: 10px 25px;
     border-bottom: 1px solid black;
