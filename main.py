@@ -42,10 +42,16 @@ with app.app_context():
     db.create_all()
 
 products = {
+    "1998": {
+        "id": "02-5324246",
+        "name": "Лимонадник Yiwu Sunflower HP-19-289 2 л",
+        "price": 1426,
+        "image": "/files/limonnik_yiwu_sunflower_hp-19-289_2l.webp"
+    },
     "99": {
         "id": "602-1565346",
         "name": "Сукні WN19-98 темно-коричневий S, M",
-        "price": 1303,
+        "price": 1187,
         "image": "/files/sukni_wn19-98_s_temno-korichneviy.webp"
     },
     "1": {
@@ -53,6 +59,18 @@ products = {
         "name": "Чохол на диван 4-місний Love You Corn Fleece 81223 коричневий",
         "price": 1689,
         "image": "/files/chohol_na_duvan.webp"
+    },
+    "8677": {
+        "id": "02-5324203",
+        "name": "Набір сервірувальних серветок Ardesto Autumn leaves ART15MN 30х45 см 2 шт",
+        "price": 382,
+        "image": "/files/nabir_serviruvalnix_servetok_ardesto_autumn_leaves.webp"
+    },
+    "2736": {
+        "id": "02-5150640",
+        "name": "Набір сервірувальних серветок Ardesto Christmas Gingerbread ART15HG 30х45 см 2 шт",
+        "price": 399,
+        "image": "/files/nabir_serviruvalnix_servetok_ardesto_christmas_gingerbread.webp"
     },
     "2": {
         "id": "991-120031284",
@@ -117,7 +135,7 @@ products = {
     "98": {
         "id": "602-1565339",
         "name": "Светри WN20-664 темно-бежевий L, XL",
-        "price": 1121,
+        "price": 1022,
         "image": "/files/swetri_wn20-664_xl_temno-begeviy.webp"
     },
     "11": {
@@ -162,12 +180,12 @@ products = {
         "price": 416,
         "image": "/files/kilzeva_svitlodiodna_lampa_dla_zyomki.webp"
     },
-    "17": {
-        "id": "02-5309509",
-        "name": "Постільна білизна євро з мусліну Koloco Print 1 23119 200х230 см",
-        "price": 1110,
-        "image": "/files/postilna_biluzna_evro_muslin_koloco_print1.webp"
-    },
+    # "17": {
+    #     "id": "02-5309509",
+    #     "name": "Постільна білизна євро з мусліну Koloco Print 1 23119 200х230 см",
+    #     "price": 1110,
+    #     "image": "/files/postilna_biluzna_evro_muslin_koloco_print1.webp"
+    # },
     "18": {
         "id": "321-111119227",
         "name": "Термосумка холодильник 26 л синя 39×23×28 см",
@@ -180,16 +198,16 @@ products = {
         "price": 424,
         "image": "/files/termosumka_holodilnik_26l_begeva.webp"
     },
-    "20": {
-        "id": "451-129210",
-        "name": "Складная, походная канистра для воды 20 л Емкость для воды с краном",
-        "price": 319,
-        "image": "/files/skladnaya_pohodnaya_kanistra_dla_vody.webp"
-    },
+    # "20": {
+    #     "id": "451-129210",
+    #     "name": "Складная, походная канистра для воды 20 л Емкость для воды с краном",
+    #     "price": 319,
+    #     "image": "/files/skladnaya_pohodnaya_kanistra_dla_vody.webp"
+    # },
     "391": {
         "id": "602-1562442",
         "name": "Чоловічі спортивні штани GN-570 темно-сірий S, M, L, XL, XXL",
-        "price": 1165,
+        "price": 1061,
         "image": "/files/cholovichi_sportivni_shtany_gb-570_temno-siruy.webp"
     },
     "21": {
@@ -210,11 +228,17 @@ products = {
         "price": 435,
         "image": "/files/rushnuk_banniy_machroviy_koloco.webp"
     },
-    "24": {
-        "id": "999-26877",
-        "name": "Стільниковий акумулятор, Переносний зарядний банк, Портативний акумулятор для телефону WQ-25",
-        "price": 476,
-        "image": "/files/stilnikoviy_akamulator_perenosni_zaradniy_bank.webp"
+    # "24": {
+    #     "id": "999-26877",
+    #     "name": "Стільниковий акумулятор, Переносний зарядний банк, Портативний акумулятор для телефону WQ-25",
+    #     "price": 476,
+    #     "image": "/files/stilnikoviy_akamulator_perenosni_zaradniy_bank.webp"
+    # },
+    "5738": {
+        "id": "02-5324202",
+        "name": "Плед Ardesto Flannel ART0238SB 200х220 см синій",
+        "price": 996,
+        "image": "/files/pled_ardesto_flannel_suniy.webp"
     },
     "25": {
         "id": "02-5208483",
@@ -234,17 +258,23 @@ products = {
         "price": 786,
         "image": "/files/trimer_vgr_zolotistiy.webp"
     },
-    "28": {
-        "id": "321-111119381",
-        "name": "Компактна шафка XL-1613 для ванної з основою 15×15 см • вертикальна система зберігання білого кольору з полицями та закритими секціями для косметики й дрібниць",
-        "price": 601,
-        "image": "/files/kompaktna_shafa_dla_vannoi_z_osnovoyu.webp"
-    },
+    # "28": {
+    #     "id": "321-111119381",
+    #     "name": "Компактна шафка XL-1613 для ванної з основою 15×15 см • вертикальна система зберігання білого кольору з полицями та закритими секціями для косметики й дрібниць",
+    #     "price": 601,
+    #     "image": "/files/kompaktna_shafa_dla_vannoi_z_osnovoyu.webp"
+    # },
     "29": {
         "id": "02-5273818",
         "name": "Форма для запікання прямокутна Maestro MR-1107-35 7х29.5х37 см чорна",
         "price": 938,
         "image": "/files/forma_dla_zapikanya_pramokutna_maestro_mr.webp"
+    },
+    "2799": {
+        "id": "02-5324275",
+        "name": "Термокухоль Ardesto Provence AR2650BD 500 мл синій",
+        "price": 628,
+        "image": "/files/termokuhol_ardesto_provence_500ml_suniy.webp"
     },
     "30": {
         "id": "02-589229575",
@@ -261,8 +291,14 @@ products = {
     "32": {
         "id": "602-1563329",
         "name": "Светри WN20-773 Universal бордовий",
-        "price": 1168,
+        "price": 1064,
         "image": "/files/svetri_wn20-773_universal_bordoviy.webp"
+    },
+    "33": {
+        "id": "123-110897",
+        "name": "Лампа LED LA-08 15W / Світильник з гачком на microUSB / Акумуляторна LED-лампочка",
+        "price": 335,
+        "image": "/files/lampa_led_svitulnuk_z_hachlom_microUSB.webp"
     }
 }
 
