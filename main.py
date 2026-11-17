@@ -48,12 +48,12 @@ products = {
         "price": 1426,
         "image": "/files/limonnik_yiwu_sunflower_hp-19-289_2l.webp"
     },
-    "99": {
-        "id": "602-1565346",
-        "name": "Сукні WN19-98 темно-коричневий S, M",
-        "price": 1187,
-        "image": "/files/sukni_wn19-98_s_temno-korichneviy.webp"
-    },
+    # "99": {
+    #     "id": "602-1565346",
+    #     "name": "Сукні WN19-98 темно-коричневий S, M",
+    #     "price": 1187,
+    #     "image": "/files/sukni_wn19-98_s_temno-korichneviy.webp"
+    # },
     "1": {
         "id": "02-5156452",
         "name": "Чохол на диван 4-місний Love You Corn Fleece 81223 коричневий",
@@ -63,31 +63,31 @@ products = {
     "8677": {
         "id": "02-5324203",
         "name": "Набір сервірувальних серветок Ardesto Autumn leaves ART15MN 30х45 см 2 шт",
-        "price": 382,
+        "price": 346,
         "image": "/files/nabir_serviruvalnix_servetok_ardesto_autumn_leaves.webp"
     },
     "2736": {
         "id": "02-5150640",
         "name": "Набір сервірувальних серветок Ardesto Christmas Gingerbread ART15HG 30х45 см 2 шт",
-        "price": 399,
+        "price": 375,
         "image": "/files/nabir_serviruvalnix_servetok_ardesto_christmas_gingerbread.webp"
     },
-    "2": {
-        "id": "991-120031284",
-        "name": "Холст на підрамнику 40х60 см Art Craft 16020",
-        "price": 382,
-        "image": "/files/holst_na_pidramniku.jpg"
-    },
+    # "2": {
+    #     "id": "991-120031284",
+    #     "name": "Холст на підрамнику 40х60 см Art Craft 16020",
+    #     "price": 382,
+    #     "image": "/files/holst_na_pidramniku.jpg"
+    # },
     "3": {
         "id": "451-100396",
         "name": "Розгалужувач прикурювача на 3 гнізда з USB",
-        "price": 227,
+        "price": 213,
         "image": "/files/roshaluzuvach.webp"
     },
     "4": {
         "id": "321-111119190",
         "name": "Силіконова сушарка DT-1503 50×35 см сіра • Сушарка для посуду DT-1503 з килимком, тримачами для тарілок, чашок і приборів",
-        "price": 550,
+        "price": 501,
         "image": "/files/silikonova_susarka.webp"
     },
     "2701": {
@@ -111,7 +111,7 @@ products = {
     "7": {
         "id": "991-120069877",
         "name": "М'яка іграшка 'Товстий кіт' K15215(White) 60 см",
-        "price": 766,
+        "price": 729,
         "image": "/files/tovstiy_kit.webp"
     },
     "8": {
@@ -135,13 +135,13 @@ products = {
     "98": {
         "id": "602-1565339",
         "name": "Светри WN20-664 темно-бежевий L, XL",
-        "price": 1022,
+        "price": 923,
         "image": "/files/swetri_wn20-664_xl_temno-begeviy.webp"
     },
     "11": {
         "id": "451-127099",
         "name": "Органайзер настільний для канцелярії, маркерів та олівців з тумбочкою",
-        "price": 406,
+        "price": 362,
         "image": "/files/organayzer_nastilniy_dla_kanz_tumbochka.webp"
     },
     "12": {
@@ -177,19 +177,19 @@ products = {
     "16": {
         "id": "451-127269",
         "name": "Кільцева світлодіодна лампа для професійної зйомки Soft Ring Light 26см",
-        "price": 416,
+        "price": 374,
         "image": "/files/kilzeva_svitlodiodna_lampa_dla_zyomki.webp"
     },
-    # "17": {
-    #     "id": "02-5309509",
-    #     "name": "Постільна білизна євро з мусліну Koloco Print 1 23119 200х230 см",
-    #     "price": 1110,
-    #     "image": "/files/postilna_biluzna_evro_muslin_koloco_print1.webp"
-    # },
+    "17": {
+        "id": "02-5309509",
+        "name": "Постільна білизна євро з мусліну Koloco Print 1 23119 200х230 см",
+        "price": 1110,
+        "image": "/files/postilna_biluzna_evro_muslin_koloco_print1.webp"
+    },
     "18": {
         "id": "321-111119227",
         "name": "Термосумка холодильник 26 л синя 39×23×28 см",
-        "price": 424,
+        "price": 363,
         "image": "/files/termosumka_holodilnik_26l.webp"
     },
     "19": {
@@ -207,25 +207,25 @@ products = {
     "391": {
         "id": "602-1562442",
         "name": "Чоловічі спортивні штани GN-570 темно-сірий S, M, L, XL, XXL",
-        "price": 1061,
+        "price": 958,
         "image": "/files/cholovichi_sportivni_shtany_gb-570_temno-siruy.webp"
     },
-    "21": {
-        "id": "02-5272947",
-        "name": "Клавіатура провідна комп'ютерна Logitech G PRO Mechanical Gaming USB L920-009392 чорна",
-        "price": 7925,
-        "image": "/files/klaviatura_providna_computerna_logitech_g_pro.webp"
-    },
+    # "21": {
+    #     "id": "02-5272947",
+    #     "name": "Клавіатура провідна комп'ютерна Logitech G PRO Mechanical Gaming USB L920-009392 чорна",
+    #     "price": 7925,
+    #     "image": "/files/klaviatura_providna_computerna_logitech_g_pro.webp"
+    # },
     "22": {
         "id": "02-5056112",
         "name": "Легінси жіночі з пуш-ап 18871 M сірі",
-        "price": 600,
+        "price": 547,
         "image": "/files/leginsu_zinochi_pushup.webp"
     },
     "23": {
         "id": "02-5280405",
         "name": "Рушник банний махровий Koloco 22215 70х140 см капучино",
-        "price": 435,
+        "price": 408,
         "image": "/files/rushnuk_banniy_machroviy_koloco.webp"
     },
     # "24": {
@@ -237,21 +237,21 @@ products = {
     "5738": {
         "id": "02-5324202",
         "name": "Плед Ardesto Flannel ART0238SB 200х220 см синій",
-        "price": 996,
+        "price": 948,
         "image": "/files/pled_ardesto_flannel_suniy.webp"
     },
     "25": {
         "id": "02-5208483",
         "name": "Стайлер для волосся Inspire WT-631-6IN1 1000 Вт чорний",
-        "price": 4023,
+        "price": 3586,
         "image": "/files/styler_dla_volosya_inspire.webp"
     },
-    "26": {
-        "id": "321-111119386",
-        "name": "Годівниця з поїлкою Pet Automatic 2 в 1 синя • Автоматична гравітаційна годівниця Pet Automatic для котів і собак із резервуарами для сухого корму та води без електрики",
-        "price": 526,
-        "image": "/files/godivnuza_z_poilkoyu_petautomatic.webp"
-    },
+    # "26": {
+    #     "id": "321-111119386",
+    #     "name": "Годівниця з поїлкою Pet Automatic 2 в 1 синя • Автоматична гравітаційна годівниця Pet Automatic для котів і собак із резервуарами для сухого корму та води без електрики",
+    #     "price": 526,
+    #     "image": "/files/godivnuza_z_poilkoyu_petautomatic.webp"
+    # },
     "27": {
         "id": "02-5210737",
         "name": "Тример VGR V-983 5 Вт золотистий",
@@ -267,7 +267,7 @@ products = {
     "29": {
         "id": "02-5273818",
         "name": "Форма для запікання прямокутна Maestro MR-1107-35 7х29.5х37 см чорна",
-        "price": 938,
+        "price": 931,
         "image": "/files/forma_dla_zapikanya_pramokutna_maestro_mr.webp"
     },
     "2799": {
@@ -285,19 +285,19 @@ products = {
     "31": {
         "id": "02-4721785",
         "name": "Кондиціонер для білизни Lavandera Морський Бриз 8435495828730 1.76 л",
-        "price": 406,
+        "price": 381,
         "image": "/files/kondizioner_dla_biluznu_lavandera_morskiy_1_76l.webp"
     },
     "32": {
         "id": "602-1563329",
         "name": "Светри WN20-773 Universal бордовий",
-        "price": 1064,
+        "price": 961,
         "image": "/files/svetri_wn20-773_universal_bordoviy.webp"
     },
     "33": {
         "id": "123-110897",
         "name": "Лампа LED LA-08 15W / Світильник з гачком на microUSB / Акумуляторна LED-лампочка",
-        "price": 335,
+        "price": 314,
         "image": "/files/lampa_led_svitulnuk_z_hachlom_microUSB.webp"
     }
 }
