@@ -1,4 +1,4 @@
-
+requests
 Flask
 Flask-SQLAlchemy
 python-dotenv
