@@ -17,22 +17,32 @@
         </div>
     </header>
     <main>
-        {% for product_key, product in products.items() %}
-        <div class="product">
-            <p>{{ product.id }}</p>
-            <img src="{{ product.image }}" alt="{{ product.name }}" class="product-image">
-            <p>{{ product.name }}</p>
-            <p>Price: ₴{{ product.price }}</p>
-            <button type="button"
+        <form method="get" action="{{ url_for('catalogue') }}" class="search-form">
+            <input type="text" name="q" value="{{ q }}" placeholder="Назва товару" required class="search-input">
+            <button type="submit" class="search-btn">Search</button>
+        </form>
+
+        {% if error %}<p class="search-msg">{{ error }}</p>{% endif %}
+        {% if q and not products and not error %}<p class="search-msg">Нічого не знайдено.</p>{% endif %}
+        {% if not q %}<p class="search-msg">Введіть назву товару для пошуку.</p>{% endif %}
+
+        {% for product in products %}
+            <div class="product">
+                <p>{{ product.id }}</p>
+                <img src="{{ product.image }}" alt="{{ product.name }}" class="product-image">
+                <p>{{ product.name }}</p>
+                <p>Price: ₴{{ product.price }}</p>
+                <button type="button"
                     class="buy_button"
-                    data-product-id="{{ product_key }}"
+                    data-product-id="{{ product.id }}"
                     data-product-name="{{ product.name }}"
                     data-product-price="{{ product.price }}"
                     onclick="openOrderForm(this)">
-                Buy Now
-            </button>
-        </div>
+                    Buy Now
+                </button>
+            </div>
         {% endfor %}
+        
         <div class="order-overlay" id="orderOverlay" onclick="closeOrderForm(event)">
 
             <div class="order-modal" role="dialog"
